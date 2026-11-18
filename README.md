@@ -2,7 +2,8 @@
 
 Installer Rezuvio untuk Mac. Rezuvio butuh kode lisensi dari pembelian di link.avenlabs.id; tanpa kode, app tidak bisa dipakai.
 
-- Unduh: halaman **Releases**, berkas `Rezuvio-<versi>.dmg`.
+- Unduh: halaman **Releases**, berkas `Rezuvio-<versi>.dmg` di bagian Assets.
+- Tautan "Source code" di halaman rilis dibuat otomatis oleh GitHub dan hanya berisi README ini, bukan app.
 - Syarat: Mac Apple Silicon (M1 atau lebih baru), macOS 14 Sonoma atau lebih baru.
 - Cara pasang: `Cara-pasang.txt` di halaman rilis yang sama.
 - Update kecil diunduh sendiri oleh app.
