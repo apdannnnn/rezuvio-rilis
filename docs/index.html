@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cara pasang Rezuvio</title>
+<meta name="description" content="Cara memasang dan mengaktifkan Rezuvio di Mac dan Windows, dengan video dan langkah bergambar.">
+<style>
+  :root {
+    --bg: #111113;
+    --panel: #1A1A1D;
+    --ink: #F5F5F6;
+    --dim: rgba(245, 245, 246, 0.72);
+    --garis: rgba(245, 245, 246, 0.12);
+    --kuning: #FFC53D;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", system-ui, Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 880px; margin: 0 auto; padding: 56px 20px 80px; }
+  h1 { font-size: 44px; line-height: 1.1; margin: 0 0 14px; letter-spacing: -0.5px; }
+  h2 { font-size: 32px; margin: 0 0 10px; letter-spacing: -0.3px; }
+  h3 { font-size: 21px; margin: 0 0 6px; }
+  p { margin: 0 0 14px; color: var(--dim); }
+  b, strong { color: var(--ink); }
+  a { color: var(--ink); }
+  .pilih { display: flex; gap: 12px; margin: 26px 0 0; flex-wrap: wrap; }
+  .pilih a {
+    flex: 1 1 220px; display: block; padding: 18px 20px; border: 1px solid var(--garis); border-radius: 14px;
+    background: var(--panel); text-decoration: none; font-weight: 700; font-size: 20px;
+  }
+  .pilih a span { display: block; font-weight: 400; font-size: 15px; color: var(--dim); margin-top: 2px; }
+  section { margin-top: 72px; padding-top: 8px; }
+  video, .langkah img { width: 100%; height: auto; display: block; border-radius: 16px; background: #000; }
+  video { margin: 18px 0 18px; aspect-ratio: 16 / 9; }
+  .unduh {
+    display: inline-block; margin: 4px 0 6px; padding: 14px 22px; border-radius: 12px; background: var(--ink); color: var(--bg);
+    font-weight: 700; text-decoration: none;
+  }
+  .syarat { font-size: 15px; margin-top: 8px; }
+  ol { list-style: none; counter-reset: n; padding: 0; margin: 34px 0 0; }
+  .langkah { counter-increment: n; margin: 0 0 40px; }
+  .langkah h3::before { content: counter(n) ". "; color: var(--kuning); }
+  .langkah p { margin: 0 0 14px; }
+  .kode { white-space: nowrap; }
+  .catat { border-left: 3px solid var(--kuning); padding: 2px 0 2px 16px; margin: 18px 0; }
+  .catat p { margin: 0; }
+  ul { color: var(--dim); padding-left: 22px; margin: 0 0 14px; }
+  li { margin: 4px 0; }
+  footer { margin-top: 72px; padding-top: 20px; border-top: 1px solid var(--garis); font-size: 14px; color: var(--dim); }
+  @media (max-width: 600px) {
+    main { padding: 36px 16px 60px; }
+    h1 { font-size: 34px; }
+    h2 { font-size: 26px; }
+    body { font-size: 16px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Cara pasang Rezuvio</h1>
+  <p>Pilih komputermu. Tonton videonya (kurang dari 1 menit), atau ikuti langkah bergambar di bawahnya. Pengaturan keamanan di langkah awal cukup dilakukan sekali.</p>
+  <div class="pilih">
+    <a href="#mac">Mac<span>Apple Silicon (M1 atau lebih baru), macOS 14 Sonoma ke atas</span></a>
+    <a href="#windows">Windows<span>Windows 10 atau 11, 64-bit</span></a>
+  </div>
+
+  <section id="mac">
+    <h2>Mac</h2>
+    <video controls preload="metadata" playsinline poster="gambar/poster-mac.jpg" src="video/Rezuvio-Cara-Pasang-Mac.mp4"></video>
+    <a class="unduh" href="https://github.com/apdannnnn/rezuvio-rilis/releases/download/v1.0.1/Rezuvio-1.0.1.dmg">Unduh Rezuvio untuk Mac (1,4 GB)</a>
+    <p class="syarat">Mac dengan chip Apple (M1 atau lebih baru) dan macOS 14 Sonoma ke atas. Mac Intel belum bisa.</p>
+    <ol>
+      <li class="langkah">
+        <h3>Unduh dan buka installer</h3>
+        <p>Unduh <b>Rezuvio-1.0.1.dmg</b>, lalu klik dua kali file-nya di folder Downloads.</p>
+        <img src="gambar/mac-1.jpg" width="1040" height="840" alt="File Rezuvio-1.0.1.dmg di folder Downloads" loading="lazy">
+      </li>
+      <li class="langkah">
+        <h3>Seret ke Applications</h3>
+        <p>Di jendela yang terbuka, seret ikon <b>Rezuvio</b> ke folder <b>Applications</b> di sebelahnya.</p>
+        <img src="gambar/mac-2.jpg" width="1040" height="840" alt="Ikon Rezuvio diseret ke folder Applications" loading="lazy">
+      </li>
+      <li class="langkah">
+        <h3>Buka Rezuvio</h3>
+        <p>Buka folder <b>Applications</b>, lalu klik dua kali <b>Rezuvio</b>.</p>
+        <img src="gambar/mac-3.jpg" width="1040" height="840" alt="Rezuvio di folder Applications" loading="lazy">
+      </li>
+      <li class="langkah">
+        <h3>macOS menolak sekali, itu wajar</h3>
+        <p>Rezuvio belum didaftarkan ke Apple, jadi macOS bertanya dulu. Klik <b>Done</b>. Jangan pilih Move to Trash.</p>
+        <img src="gambar/mac-4.jpg" width="1040" height="840" alt="Dialog “Rezuvio” Not Opened dengan tombol Done" loading="lazy">
+      </li>
+      <li class="langkah">
+        <h3>Izinkan di System Settings</h3>
+        <p>Buka <b>System Settings</b> (menu Apple di pojok kiri atas), pilih <b>Privacy &amp; Security</b>, gulir ke bawah sampai bagian Security, lalu klik <b>Open Anyway</b> di baris Rezuvio.</p>
+        <img src="gambar/mac-5.jpg" width="1040" height="840" alt="Privacy & Security dengan tombol Open Anyway" loading="lazy">
+      </li>
+      <li class="langkah">
+        <h3>Konfirmasi sekali lagi</h3>
+        <p>Klik <b>Open Anyway</b> di dialog yang muncul, lalu masukkan password Mac atau pakai Touch ID.</p>
+        <img src="gambar/mac-6.jpg" width="1040" height="840" alt="Dialog Open “Rezuvio”? dengan tombol Open Anyway" loading="lazy">
+      </li>
+      <li class="langkah">
+        <h3>Aktifkan lisensi</h3>
+        <p>Ketik kode lisensi dari email pembelian (<b class="kode">RZV-XXXX-XXXX-XXXX</b>), lalu klik <b>Activate</b>. Butuh internet di aktivasi pertama.</p>
+        <img src="gambar/mac-7.jpg" width="1040" height="840" alt="Layar Activate Rezuvio" loading="lazy">
+      </li>
+    </ol>
+    <div class="catat"><p>Langkah 4 sampai 6 cukup sekali. Sesudah itu Rezuvio terbuka seperti app lain.</p></div>
+  </section>
+
+  <section id="windows">
+    <h2>Windows</h2>
+    <video controls preload="metadata" playsinline poster="gambar/poster-win.jpg" src="video/Rezuvio-Cara-Pasang-Win.mp4"></video>
+    <a class="unduh" href="https://github.com/apdannnnn/rezuvio-rilis/releases/download/v1.0.1/Rezuvio-Setup-1.0.1.exe">Unduh Rezuvio untuk Windows (1,2 GB)</a>
+    <p class="syarat">Windows 10 (versi 1809 atau lebih baru) atau Windows 11, 64-bit. RAM 16 GB disarankan.</p>
+    <ol>
+      <li class="langkah">
+        <h3>Unduh installer</h3>
+        <p>Unduh <b>Rezuvio-Setup-1.0.1.exe</b>. Kalau browser bilang file ini jarang diunduh, pilih <b>Keep</b> (di Edge: ikon titik tiga, lalu Keep, lalu Keep anyway). Lalu klik dua kali file-nya.</p>
+        <img src="gambar/win-1.jpg" width="1040" height="840" alt="File Rezuvio-Setup-1.0.1.exe di folder Downloads" loading="lazy">
+      </li>
+      <li class="langkah">
+        <h3>Windows bertanya dulu</h3>
+        <p>Muncul <b>Windows protected your PC</b> karena installer ini belum bersertifikat. Klik <b>More info</b>.</p>
+        <img src="gambar/win-2.jpg" width="1040" height="840" alt="Dialog Windows protected your PC dengan tautan More info" loading="lazy">
+      </li>
+      <li class="langkah">
+        <h3>Jalankan installer</h3>
+        <p>Klik <b>Run anyway</b>.</p>
+        <img src="gambar/win-3.jpg" width="1040" height="840" alt="Tombol Run anyway" loading="lazy">
+      </li>
+      <li class="langkah">
+        <h3>Pasang</h3>
+        <p>Klik <b>Next</b>, lalu <b>Install</b>, dan tunggu sampai selesai. Shortcut di desktop boleh dicentang kalau mau.</p>
+        <img src="gambar/win-4.jpg" width="1040" height="840" alt="Installer Rezuvio, halaman Select Additional Tasks" loading="lazy">
+      </li>
+      <li class="langkah">
+        <h3>Buka Rezuvio</h3>
+        <p>Biarkan <b>Open Rezuvio</b> tercentang, lalu klik <b>Finish</b>. Berikutnya Rezuvio bisa dibuka dari menu Start.</p>
+        <img src="gambar/win-5.jpg" width="1040" height="840" alt="Installer selesai, tombol Finish" loading="lazy">
+      </li>
+      <li class="langkah">
+        <h3>Aktifkan lisensi</h3>
+        <p>Ketik kode lisensi dari email pembelian (<b class="kode">RZV-XXXX-XXXX-XXXX</b>), lalu klik <b>Activate</b>. Butuh internet di aktivasi pertama.</p>
+        <img src="gambar/win-6.jpg" width="1040" height="840" alt="Layar Activate Rezuvio di Windows" loading="lazy">
+      </li>
+    </ol>
+    <div class="catat"><p>Peringatan Windows hanya muncul sekali, waktu memasang.</p></div>
+  </section>
+
+  <section id="lisensi">
+    <h2>Lisensi</h2>
+    <ul>
+      <li>Satu kode untuk 2 komputer (Mac atau Windows), berlaku 1 tahun sejak aktivasi pertama.</li>
+      <li>Rezuvio perlu tersambung internet paling tidak sekali tiap 14 hari.</li>
+      <li>Ganti komputer: di layar awal Rezuvio klik <b>License…</b>, lalu <b>Release This Mac</b> atau <b>Release This PC</b>. Sesudah itu kodenya bisa dipakai di komputer lain.</li>
+      <li>Update kecil diunduh sendiri oleh Rezuvio dan dipakai waktu app dibuka berikutnya.</li>
+      <li>Foto diproses di komputermu sendiri dan tidak pernah diunggah.</li>
+    </ul>
+    <p>Gabung <a href="https://chat.whatsapp.com/IkH580GcJZq0t7GPMTQAqe">grup WhatsApp pembeli Rezuvio</a> untuk kabar update dan tanya-jawab.
+    Ada kendala waktu memasang? Tanya di grup itu, atau balas email pembelianmu.</p>
+  </section>
+
+  <footer>Rezuvio oleh AvenLabs</footer>
+</main>
+</body>
+</html>
